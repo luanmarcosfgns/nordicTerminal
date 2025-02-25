@@ -1,0 +1,47 @@
+###LIST COMANDS
+GET http://localhost:8000/api/comands
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+###VER COMANDS
+GET http://localhost:8000/api/comands/1
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+####ADICIONAR COMANDS
+POST http://localhost:8000/api/comands
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+{
+    "connection_id":"Loren Epsun",
+    "nome":"Loren Epsun",
+    "comand":"Loren Epsun"
+
+}
+####MUDAR COMANDS
+POST http://localhost:8000/api/comands/1
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+{
+    "_method": "PUT",
+    "connection_id":"Loren Epsun",
+    "nome":"Loren Epsun",
+    "comand":"Loren Epsun"
+
+}
+
+####APAGAR COMANDS
+POST http://localhost:8000/api/comands/1
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+{
+    "_method": "DELETE"
+}

@@ -1,0 +1,61 @@
+###LIST USERS
+GET http://localhost:8000/api/users
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+###VER USERS
+GET http://localhost:8000/api/users/1
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+####ADICIONAR USERS
+POST http://localhost:8000/api/users
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nome":"Loren Epsun",
+    "descritivo":"Loren Epsun",
+    "email":"Loren Epsun",
+    "password":"Loren Epsun",
+    "unidade_id":1,
+    "e_admin":1,
+    "e_venda":1,
+    "e_compra":1,
+    "ativo":1,
+    "deleted_at":"2001-05-11 10:00:03"
+
+}
+####MUDAR USERS
+POST http://localhost:8000/api/users/1
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+{
+    "_method": "PUT",
+    "nome":"Loren Epsun",
+    "descritivo":"Loren Epsun",
+    "email":"Loren Epsun",
+    "password":"Loren Epsun",
+    "unidade_id":1,
+    "e_admin":1,
+    "e_venda":1,
+    "e_compra":1,
+    "ativo":1,
+    "deleted_at":"2001-05-11 10:00:03"
+
+}
+
+####APAGAR USERS
+POST http://localhost:8000/api/users/1
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+{
+    "_method": "DELETE"
+}

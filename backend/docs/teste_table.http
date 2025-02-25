@@ -1,0 +1,59 @@
+###LIST TESTE_TABLE
+GET http://localhost:8000/api/teste_table
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+###VER TESTE_TABLE
+GET http://localhost:8000/api/teste_table/1
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+####ADICIONAR TESTE_TABLE
+POST http://localhost:8000/api/teste_table
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+{
+    "string":"Loren Epsun",
+    "inteiro":1,
+    "decimal":1.1,
+    "user_id":1,
+    "arquivo":"file",
+    "date":"2001-05-11",
+    "time":"10:00:03",
+    "datetime":"2001-05-11 10:00:03",
+    "longtexto":"Loren Epsun"
+
+}
+####MUDAR TESTE_TABLE
+POST http://localhost:8000/api/teste_table/1
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+{
+    "_method": "PUT",
+    "string":"Loren Epsun",
+    "inteiro":1,
+    "decimal":1.1,
+    "user_id":1,
+    "arquivo":"file",
+    "date":"2001-05-11",
+    "time":"10:00:03",
+    "datetime":"2001-05-11 10:00:03",
+    "longtexto":"Loren Epsun"
+
+}
+
+####APAGAR TESTE_TABLE
+POST http://localhost:8000/api/teste_table/1
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+{
+    "_method": "DELETE"
+}

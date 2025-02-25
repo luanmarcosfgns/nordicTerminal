@@ -1,0 +1,274 @@
+{
+  "message": "App\\Util\\DataFormat::retirarMascaraTelefone(): Argument #1 ($telefone) must be of type string, null given, called in /home/ordm/domains/api.gestor.ordm.com.br/backend/app/Http/Controllers/Site/LeadsSiteController.php on line 17",
+  "exception": "TypeError",
+  "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/app/Util/DataFormat.php",
+  "line": 118,
+  "trace": [
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/app/Http/Controllers/Site/LeadsSiteController.php",
+      "line": 17,
+      "function": "retirarMascaraTelefone",
+      "class": "App\\Util\\DataFormat",
+      "type": "::"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Routing/Controller.php",
+      "line": 54,
+      "function": "save",
+      "class": "App\\Http\\Controllers\\Site\\LeadsSiteController",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php",
+      "line": 43,
+      "function": "callAction",
+      "class": "Illuminate\\Routing\\Controller",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Routing/Route.php",
+      "line": 259,
+      "function": "dispatch",
+      "class": "Illuminate\\Routing\\ControllerDispatcher",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Routing/Route.php",
+      "line": 205,
+      "function": "runController",
+      "class": "Illuminate\\Routing\\Route",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+      "line": 806,
+      "function": "run",
+      "class": "Illuminate\\Routing\\Route",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+      "line": 144,
+      "function": "Illuminate\\Routing\\{closure}",
+      "class": "Illuminate\\Routing\\Router",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php",
+      "line": 50,
+      "function": "Illuminate\\Pipeline\\{closure}",
+      "class": "Illuminate\\Pipeline\\Pipeline",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+      "line": 183,
+      "function": "handle",
+      "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php",
+      "line": 159,
+      "function": "Illuminate\\Pipeline\\{closure}",
+      "class": "Illuminate\\Pipeline\\Pipeline",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php",
+      "line": 125,
+      "function": "handleRequest",
+      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php",
+      "line": 87,
+      "function": "handleRequestUsingNamedLimiter",
+      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+      "line": 183,
+      "function": "handle",
+      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+      "line": 119,
+      "function": "Illuminate\\Pipeline\\{closure}",
+      "class": "Illuminate\\Pipeline\\Pipeline",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+      "line": 805,
+      "function": "then",
+      "class": "Illuminate\\Pipeline\\Pipeline",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+      "line": 784,
+      "function": "runRouteWithinStack",
+      "class": "Illuminate\\Routing\\Router",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+      "line": 748,
+      "function": "runRoute",
+      "class": "Illuminate\\Routing\\Router",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+      "line": 737,
+      "function": "dispatchToRoute",
+      "class": "Illuminate\\Routing\\Router",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+      "line": 200,
+      "function": "dispatch",
+      "class": "Illuminate\\Routing\\Router",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+      "line": 144,
+      "function": "Illuminate\\Foundation\\Http\\{closure}",
+      "class": "Illuminate\\Foundation\\Http\\Kernel",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php",
+      "line": 21,
+      "function": "Illuminate\\Pipeline\\{closure}",
+      "class": "Illuminate\\Pipeline\\Pipeline",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php",
+      "line": 31,
+      "function": "handle",
+      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+      "line": 183,
+      "function": "handle",
+      "class": "Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php",
+      "line": 21,
+      "function": "Illuminate\\Pipeline\\{closure}",
+      "class": "Illuminate\\Pipeline\\Pipeline",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php",
+      "line": 40,
+      "function": "handle",
+      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+      "line": 183,
+      "function": "handle",
+      "class": "Illuminate\\Foundation\\Http\\Middleware\\TrimStrings",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php",
+      "line": 27,
+      "function": "Illuminate\\Pipeline\\{closure}",
+      "class": "Illuminate\\Pipeline\\Pipeline",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+      "line": 183,
+      "function": "handle",
+      "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php",
+      "line": 99,
+      "function": "Illuminate\\Pipeline\\{closure}",
+      "class": "Illuminate\\Pipeline\\Pipeline",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+      "line": 183,
+      "function": "handle",
+      "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php",
+      "line": 62,
+      "function": "Illuminate\\Pipeline\\{closure}",
+      "class": "Illuminate\\Pipeline\\Pipeline",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+      "line": 183,
+      "function": "handle",
+      "class": "Illuminate\\Http\\Middleware\\HandleCors",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php",
+      "line": 39,
+      "function": "Illuminate\\Pipeline\\{closure}",
+      "class": "Illuminate\\Pipeline\\Pipeline",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+      "line": 183,
+      "function": "handle",
+      "class": "Illuminate\\Http\\Middleware\\TrustProxies",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+      "line": 119,
+      "function": "Illuminate\\Pipeline\\{closure}",
+      "class": "Illuminate\\Pipeline\\Pipeline",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+      "line": 175,
+      "function": "then",
+      "class": "Illuminate\\Pipeline\\Pipeline",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+      "line": 144,
+      "function": "sendRequestThroughRouter",
+      "class": "Illuminate\\Foundation\\Http\\Kernel",
+      "type": "->"
+    },
+    {
+      "file": "/home/ordm/domains/api.gestor.ordm.com.br/backend/public/index.php",
+      "line": 51,
+      "function": "handle",
+      "class": "Illuminate\\Foundation\\Http\\Kernel",
+      "type": "->"
+    }
+  ]
+}

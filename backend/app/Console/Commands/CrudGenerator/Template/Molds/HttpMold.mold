@@ -1,0 +1,41 @@
+###LIST :description
+GET http://localhost:8000/api/:table
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+###VER :description
+GET http://localhost:8000/api/:table/1
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+####ADICIONAR :description
+POST http://localhost:8000/api/:table
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+{
+:columns
+}
+####MUDAR :description
+POST http://localhost:8000/api/:table/1
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+{
+    "_method": "PUT",
+:columns
+}
+
+####APAGAR :description
+POST http://localhost:8000/api/:table/1
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+{
+    "_method": "DELETE"
+}

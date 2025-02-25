@@ -1,0 +1,59 @@
+###LIST CONNECTIONS
+GET http://localhost:8000/api/connections
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+###VER CONNECTIONS
+GET http://localhost:8000/api/connections/1
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+####ADICIONAR CONNECTIONS
+POST http://localhost:8000/api/connections
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nome":"Loren Epsun",
+    "user_id":1,
+    "host":"Loren Epsun",
+    "port":1,
+    "username":"Loren Epsun",
+    "password":"Loren Epsun",
+    "public_key":"Loren Epsun",
+    "private_key":"Loren Epsun",
+    "passphrase":"Loren Epsun"
+
+}
+####MUDAR CONNECTIONS
+POST http://localhost:8000/api/connections/1
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+{
+    "_method": "PUT",
+    "nome":"Loren Epsun",
+    "user_id":1,
+    "host":"Loren Epsun",
+    "port":1,
+    "username":"Loren Epsun",
+    "password":"Loren Epsun",
+    "public_key":"Loren Epsun",
+    "private_key":"Loren Epsun",
+    "passphrase":"Loren Epsun"
+
+}
+
+####APAGAR CONNECTIONS
+POST http://localhost:8000/api/connections/1
+Authorization: Bearer :hash
+Content-Type: application/json
+Accept: application/json
+
+{
+    "_method": "DELETE"
+}

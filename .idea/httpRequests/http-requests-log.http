@@ -1,0 +1,183 @@
+POST http://api.ordm.localhost:8000/api/leads/save
+Accept: application/json, text/plain, */*
+Accept-Language: pt-PT,pt;q=0.9,pt-BR;q=0.8,en;q=0.7,en-US;q=0.6,en-GB;q=0.5
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+sec-ch-ua: "Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Content-Type: application/json
+Content-Length: 334
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "nome": "Luan Marcos Figueira",
+  "telefone": "(69) 9 9960-4701",
+  "cidade_id": "1",
+  "nascimento": null,
+  "atendimento": null,
+  "cpf": null,
+  "email": "luanmarcosfgns@gmail.com",
+  "cnpj": null,
+  "aceita_comunicacao": true,
+  "aceitou_termo": true,
+  "tipo": "parceiro",
+  "url": "/contato",
+  "atuacao_financeira": "sim"
+}
+
+<> 2024-04-18T144641.500.json
+
+###
+
+POST http://api.ordm.localhost:8000/api/leads/save
+Accept: application/json, text/plain, */*
+Accept-Language: pt-PT,pt;q=0.9,pt-BR;q=0.8,en;q=0.7,en-US;q=0.6,en-GB;q=0.5
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+sec-ch-ua: "Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Content-Type: application/json
+Content-Length: 334
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "nome": "Luan Marcos Figueira",
+  "telefone": "(69) 9 9960-4701",
+  "cidade_id": "1",
+  "nascimento": null,
+  "atendimento": null,
+  "cpf": null,
+  "email": "luanmarcosfgns@gmail.com",
+  "cnpj": null,
+  "aceita_comunicacao": true,
+  "aceitou_termo": true,
+  "tipo": "parceiro",
+  "url": "/contato",
+  "atuacao_financeira": "sim"
+}
+
+<> 2024-04-18T142715.500.json
+
+###
+
+POST http://api.ordm.localhost:8000/api/leads/save
+Accept: application/json, text/plain, */*
+Accept-Language: pt-PT,pt;q=0.9,pt-BR;q=0.8,en;q=0.7,en-US;q=0.6,en-GB;q=0.5
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+sec-ch-ua: "Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Content-Type: application/json
+Content-Length: 334
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "nome": "Luan Marcos Figueira",
+  "telefone": "(69) 9 9960-4701",
+  "cidade_id": "1",
+  "nascimento": null,
+  "atendimento": null,
+  "cpf": null,
+  "email": "luanmarcosfgns@gmail.com",
+  "cnpj": null,
+  "aceita_comunicacao": true,
+  "aceitou_termo": true,
+  "tipo": "parceiro",
+  "url": "/contato",
+  "atuacao_financeira": "sim"
+}
+
+<> 2024-04-18T141605.500.json
+
+###
+
+POST http://api.ordm.localhost:8000/api/leads/save
+Accept: application/json, text/plain, */*
+Accept-Language: pt-PT,pt;q=0.9,pt-BR;q=0.8,en;q=0.7,en-US;q=0.6,en-GB;q=0.5
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+sec-ch-ua: "Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Content-Type: application/json
+Content-Length: 300
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "nome": "Luan Marcos Figueira",
+  "cidade_id": "1",
+  "nascimento": null,
+  "atendimento": null,
+  "cpf": null,
+  "email": "luanmarcosfgns@gmail.com",
+  "cnpj": null,
+  "aceita_comunicacao": true,
+  "aceitou_termo": true,
+  "tipo": "parceiro",
+  "url": "/contato",
+  "atuacao_financeira": "sim"
+}
+
+<> 2024-04-18T141254.500.json
+
+###
+
+POST https://api.gestor.ordm.com.br/api/leads/save
+Accept: application/json, text/plain, */*
+Accept-Language: pt-PT,pt;q=0.9,pt-BR;q=0.8,en;q=0.7,en-US;q=0.6,en-GB;q=0.5
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+sec-ch-ua: "Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Content-Type: application/json
+Content-Length: 300
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "nome": "Luan Marcos Figueira",
+  "cidade_id": "1",
+  "nascimento": null,
+  "atendimento": null,
+  "cpf": null,
+  "email": "luanmarcosfgns@gmail.com",
+  "cnpj": null,
+  "aceita_comunicacao": true,
+  "aceitou_termo": true,
+  "tipo": "parceiro",
+  "url": "/contato",
+  "atuacao_financeira": "sim"
+}
+
+<> 2024-04-18T141118.500.json
+
+###
+

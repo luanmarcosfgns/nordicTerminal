@@ -1,0 +1,113 @@
+<?php
+
+namespace App\Http\Controllers;
+
+:useModel
+use Illuminate\View\View;
+use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Routing\Controller;
+
+
+class :modelController extends Controller
+{
+    public function validated($type,$request){
+        :validatedStoreUpdate
+        return $request->only(:columns);
+    }
+    /**
+     * Display a listing of the resource.
+     */
+    public function index(Request $request): JsonResponse
+    {
+
+        $search = $request->get("search", "");
+        if ($search == null) {
+            $search = "";
+        }
+        $:table = :model::search($search)
+        ->selectRaw(':selectColumns')
+        :join
+        ->paginate(1000);
+
+        return response()->json($:table);
+    }
+
+
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request): JsonResponse
+    {
+
+        $validated = $this->validated("store",$request);
+
+        $:tableSingular = :model::create($validated);
+
+         return response()->json($:tableSingular);
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(Request $request, $id):JsonResponse
+    {
+        $:tableSingular = :model::find($id);
+
+       return response()->json($:tableSingular);
+    }
+
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(
+        Request $request,
+                $id
+    ): JsonResponse{
+
+        $:tableSingular = :model::find($id);
+        $validated = $this->validated("update",$request);
+
+        $:tableSingular->update($validated);
+
+         return response()->json($:tableSingular);
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(Request $request, $id): JsonResponse
+    {
+        $:tableSingular = :model::find($id);
+        $:tableSingular->delete();
+
+       return response()->json(["success"=>true,"message"=>"Removed success"]);
+    }
+
+     public function find(Request $request)
+        {
+
+                if (!empty($request->search)) {
+                    $rows = :model::select('id as code', DB::raw('CONCAT(id,"-",nome) as label'))
+                        ->limit(100)->where('nome', 'like', '%' . $request->pesquisa . '%')
+                        ->get();
+                    return response()->json($rows);
+                }
+
+                if (!empty($request->id)) {
+                    $rows = :model::select('id as code', DB::raw('CONCAT(id,"-",nome) as label'))
+                        ->where('id', $request->id)
+                        ->first();
+
+                    return response()->json($rows);
+                }
+
+                $rows = :model::select('id as code', DB::raw('CONCAT(id,"-",nome) as label'))
+                    ->limit(25)
+                    ->get();
+                return response()->json($rows);
+        }
+
+}

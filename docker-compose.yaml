@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  database:
+    image: mariadb
+    environment:
+      - MYSQL_DATABASE=dados
+      - MYSQL_ROOT_PASSWORD=27258a
+
+    ports:
+      - "3306:3306"
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
+    ports:
+      - "8000:8000"
+      - "8080:8080"
+    restart: always
+
+
+
